@@ -23,9 +23,9 @@ class Header extends Component {
         </div>
         <div>
           {user.map((user) => (
-            <div className="usuario">
-              <h2> Bem Vindo: {user.name.title}. {user.name.first}</h2>
-              <img src={user.picture.medium} className="user"/>
+            <div key={user.id} className="usuario">
+              <h2> Bem Vindo: {user.name.first}</h2>
+              <img src={user.picture.medium} alt="user"className="user"/>
             </div>
           ))}
         </div>
